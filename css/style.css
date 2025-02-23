@@ -1,0 +1,529 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+Ul,li{
+    list-style-type: none;
+}
+img{
+    vertical-align: center;
+}
+/* font */
+@font-face {
+    font-family:Gentium Book;
+    src: url(../fonts/GenBkBasR.ttf);
+}
+@font-face {
+    font-family:Yeseva One;
+    src: url(../fonts/YesevaOne-Regular.ttf);
+}
+@font-face {
+    font-family:Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face{
+    font-family:Gerogia;
+    src: url(../fonts/georgia.ttf)
+}
+@font-face{
+    font-family: Open Sans;
+    src:url(../fonts/OpenSans_Condensed-Regular.ttf);
+}
+:root {
+    --primary: #cc9900;
+  }
+
+/* common_css_start */
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.sub_container{
+    width: 1030px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.jc_space_between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.m_top_70{
+    margin-top: 70px;
+}
+/* common_css_end */
+
+.header_container{
+    width: 100%;
+    background: url(../images/Restrurent_header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: scroll;
+}
+
+/* header_part_start */
+header{
+    width: 100%;
+}
+header .company_logo{
+    width: 200px;
+    float: left;
+    margin: 11px 0px;
+}
+header .company_logo img{
+}
+header .nav_menu_part{
+    width: 970px;
+    float: right;
+    margin-top: 54px;
+    margin-bottom: 38px;
+}
+.nav_menu_part .nav_menu_list{
+    width: 860px;
+    float: left;
+}
+.nav_menu_part .nav_menu_list .nav_list_ul{
+    float: right;
+    display: flex;
+}
+.nav_list_ul li a{
+    font-family: Gentium Book;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0 25.5px;
+    text-transform: capitalize;
+    transition: all linear 0.4s;
+}
+
+
+
+.nav_menu_part .nav_menu_icon{
+    width: 110px;
+    float: right;
+}
+.nav_menu_part .nav_menu_icon .nav_icon_ul{
+    float: right;
+    display: flex;
+}
+.nav_icon_ul li a i{
+    font-size: 21px;
+    color: #dab33e;
+    padding: 0px 12.5px;
+    transition: all linear 0.4s;
+}
+
+.nav_list_ul li a:hover,
+.nav_icon_ul li a i:hover{
+    color: #726f6f;
+}
+
+.nav_list_ul li a:last-child,
+.nav_icon_ul li a i:last-child{
+    padding-right: 0px;
+}
+/* header_part_end */
+
+
+/* heading_part_start */
+.web_heading .heading_content{
+    padding: 130px 0 142px;
+}
+.heading_content h1{
+    font-family: Yeseva One;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.heading_content .heading_img{
+    margin: 34px auto;
+}
+.heading_content .heading_button{
+    margin: 0 auto; 
+}
+.heading_button button{
+    font-family: Lato;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.173);
+    backdrop-filter: blur(0.5px);
+    padding: 23px 52px; 
+    margin: 0 15px;
+}
+.heading_button button:hover{
+
+    background-color: rgba(26, 25, 25, 0.8);
+    backdrop-filter: blur(0.5px);
+}
+/* heading_part_end */
+
+
+/* first_dish_part_start */
+.first_dish_part{
+    background:url(../images/dish_img_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.first_dish_containt{
+    width: 430px;
+    padding: 100px 0px;
+}
+/* common_heading_start */
+.common_heading{
+    font-family: Yeseva One;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--primary);
+}
+/* common_heading_end */
+
+/* common_heading_img_start */
+.common_heading_img{
+    width: 230px;
+    margin: 15px auto 33px;
+}
+/* common_heading_img_end */
+
+/* common_p_start */
+.common_p{
+    font-family: Lato;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4c4c4c;
+    margin-bottom: 52px;
+    line-height: 1.6;
+}
+/* common_p_end */
+
+.first_dish_chef_logo{
+    width: 220px;
+    margin-left: 140px;
+}
+/* first_dish_part_end */
+
+/* dish_ingredients_part_start */
+.dish_ingredients{
+    background:url(../images/tree_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.ingredients_container{
+    width: 1170px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.ingredients_container .ingredients_content{
+    background: rgba(0, 0, 0, 0.67);
+    width: 570px;
+    float: right;
+    padding: 82px 77px 77px;
+}
+.ingredients_h2{
+    color: #ffffff;
+}
+.ingredients_p{
+    color: #ffffff;
+}
+.ingredients_img_grp{
+    width: 390px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ingredients_img{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+}
+/* dish_ingredients_part_end */
+
+
+/* item_list_part_start */
+.item_list_part{
+    background:url(../images/item_list_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+}
+
+/* common_food_item_start */
+.food_item{
+    margin-bottom: 15px;
+}
+.item_list_section{
+    width: 430px;
+    margin: 0 70px;
+}
+.food_item_section{
+    border-bottom: 1px solid #c89f2d;
+    padding-bottom: 13px; 
+}
+.food_item_name{
+    width: 330px;
+}
+.food_item_name h3{
+    font-family: Yeseva One;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+    color: #c89f2d;
+    text-transform: capitalize;
+}
+.food_item_p{
+    width: 100px;
+}
+.food_item_p h4{
+    font-family: Yeseva One;
+    text-align: right;
+    font-size: 21px;
+    font-weight: 400;
+    color: #c89f2d
+}
+.food_item_about{
+    width: 100%;
+    margin-top: 15px;
+}
+.food_item_about p{
+    font-family: Lato;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4c4c4c
+}
+/* special_item_start */
+.special_item{
+    border: 1px solid #c89f2d;
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.special_item::after{
+    position: absolute;
+    height: 22px;
+    width: 70px;
+    right: -1px;
+    top: -22px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: var(--primary);
+    content: 'Special';
+}
+
+/* special_item_end */
+/* common_food_item_end  */
+/* item_list_part_end */
+
+
+/* guest_review_part_start */
+.guest_review_part{
+    background:url(../images/guest_review-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+
+}
+.guest_review_part .guest_review_content{
+    background: rgba(0, 0, 0, 0.6);
+    width: 770px;
+    padding: 83px 74px ;
+}
+.guest_review_content p{
+    font-family: Gentium Book;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 700;
+    color: #dde0df;
+    position: relative;
+}
+.guest_review_content p::before{
+    position: absolute;
+    /* height: 90px;
+    width: 90px; */
+    left: -38px;
+    top: -13px;
+    text-align: center;
+    font-family: Gerogia;
+    color: #747575;
+    content:url(../images/quotation_img.png);
+}
+.guest_review_content h4{
+    font-family: Lato;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 34px 0 23px;
+}
+/* guest_review_part_end */
+
+
+/* resturent_booking_part_start  */
+.resturent_booking_part{
+    background:url(../images/item_list_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+
+}
+.resturent_booking_part .resturent_booking_section{
+    width: 570px;
+}
+.resturent_booking_section .resturent_booking_img{
+    width: 270px;
+    height: 508px;
+}
+.resturent_booking_data{
+    padding: 0 70px;
+}
+
+/* resturent_common_p_start */
+.minus_margin{
+    margin-bottom: 0px;
+}
+/* resturent_common_p_end */
+
+.resturent_bookin_p1{
+    margin: 62px 0 15px
+}
+/* common_label_start */
+.common_label{
+    font-family:Open Sans;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c9a131;
+}
+/* common_label_end */
+
+/* common_input_start */
+.common_input{
+    width: 198px;
+    height: 34px;
+    border: 1px solid #e1e2e2;
+    outline: none;
+    background-color: transparent;
+}
+.common_input:hover{
+    border-color: #e0d1a3;
+}
+.common_input::placeholder{
+    font-family:Open Sans;
+    text-align: left;
+    font-size: 16px;
+    font-style: italic;
+    color: #7c7c7c;
+    padding-left: 13px;
+}
+/* common_input_end */
+.resturent_booking_form_button{
+    margin-top: 33px;
+}
+
+.resturent_booking_form_button button{
+    width: 199px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #c8a131;
+    font-family:Open Sans;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    /* padding: 13px 61px 12px 63px; */
+}
+
+/* extra_margin */
+.name_email_mt_36{
+    margin-top: 36px;
+}
+.date_party_mt_23{
+    margin-top: 23px;
+}
+/* extra_margin */
+/* resturent_booking_part_send */
+
+/* footer_start */
+footer{
+    padding: 50px 0;
+    background-color: #191919;
+}
+.footer_wrapper{
+    padding-bottom: 23px;
+}
+.footer_section{
+    width: 370px;
+}
+
+/* footer_common_heading_start  */
+.footer_common_heading{
+    font-family: Yeseva One;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fefefe;
+    text-transform: capitalize;
+    margin-bottom: 62px;
+}
+/* footer_common_heading_end */
+
+.footer_section p{
+    font-family: Open Sans;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 0px 14px;
+}
+.footer_section p span{
+    font-weight: 700;
+}
+.footer_icon{
+    /* background-color: #34b187; */
+    margin-top: 46px;
+}
+.social_icon ul{
+    display: flex;
+}
+.social_icon ul li i{
+    font-size: 17px;
+    color: #ffffff;
+    padding: 0 5px;
+}
+/* footer_end */
