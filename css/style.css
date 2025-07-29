@@ -10,7 +10,7 @@ Ul,li{
     list-style-type: none;
 }
 img{
-    vertical-align: center;
+    vertical-align: middle;
 }
 /* font */
 @font-face {
@@ -35,34 +35,17 @@ img{
 }
 :root {
     --primary: #cc9900;
-  }
+}
 
 /* common_css_start */
-.container{
+/* .container{
     width: 1170px;
     margin: 0 auto;
-}
+} */
 .sub_container{
     width: 1030px;
     margin: 0 auto;
 }
-.clr{
-    clear: both;
-}
-.row{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.jc_space_between{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.m_top_70{
-    margin-top: 70px;
-}
-/* common_css_end */
 
 .header_container{
     width: 100%;
@@ -72,7 +55,6 @@ img{
     background-position: 100% 100%;
     background-attachment: scroll;
 }
-
 /* header_part_start */
 header{
     width: 100%;
@@ -82,19 +64,17 @@ header .company_logo{
     float: left;
     margin: 11px 0px;
 }
-header .company_logo img{
-}
 header .nav_menu_part{
     width: 970px;
     float: right;
     margin-top: 54px;
     margin-bottom: 38px;
 }
-.nav_menu_part .nav_menu_list{
+.nav_menu_list{
     width: 860px;
     float: left;
 }
-.nav_menu_part .nav_menu_list .nav_list_ul{
+.nav_menu_list .nav_list_ul{
     float: right;
     display: flex;
 }
@@ -107,9 +87,6 @@ header .nav_menu_part{
     text-transform: capitalize;
     transition: all linear 0.4s;
 }
-
-
-
 .nav_menu_part .nav_menu_icon{
     width: 110px;
     float: right;
@@ -136,7 +113,6 @@ header .nav_menu_part{
 }
 /* header_part_end */
 
-
 /* heading_part_start */
 .web_heading .heading_content{
     padding: 130px 0 142px;
@@ -151,9 +127,7 @@ header .nav_menu_part{
 .heading_content .heading_img{
     margin: 34px auto;
 }
-.heading_content .heading_button{
-    margin: 0 auto; 
-}
+
 .heading_button button{
     font-family: Lato;
     text-align: center;
@@ -173,7 +147,6 @@ header .nav_menu_part{
     background-color: rgba(26, 25, 25, 0.8);
     backdrop-filter: blur(0.5px);
 }
-/* heading_part_end */
 
 
 /* first_dish_part_start */
@@ -185,7 +158,6 @@ header .nav_menu_part{
     background-attachment: scroll;
 }
 .first_dish_containt{
-    width: 430px;
     padding: 100px 0px;
 }
 /* common_heading_start */
@@ -223,6 +195,7 @@ header .nav_menu_part{
 }
 /* first_dish_part_end */
 
+
 /* dish_ingredients_part_start */
 .dish_ingredients{
     background:url(../images/tree_banner.jpg);
@@ -232,14 +205,10 @@ header .nav_menu_part{
     background-attachment: scroll;
 }
 .ingredients_container{
-    width: 1170px;
     padding: 100px 0;
-    margin: 0 auto;
 }
 .ingredients_container .ingredients_content{
     background: rgba(0, 0, 0, 0.67);
-    width: 570px;
-    float: right;
     padding: 82px 77px 77px;
 }
 .ingredients_h2{
@@ -271,21 +240,16 @@ header .nav_menu_part{
     background-attachment: scroll;
     padding: 100px 0;
 }
-
+.item_list_section_grp {
+    margin: 0 70px 70px 70px;
+}
 /* common_food_item_start */
 .food_item{
     margin-bottom: 15px;
 }
-.item_list_section{
-    width: 430px;
-    margin: 0 70px;
-}
 .food_item_section{
     border-bottom: 1px solid #c89f2d;
     padding-bottom: 13px; 
-}
-.food_item_name{
-    width: 330px;
 }
 .food_item_name h3{
     font-family: Yeseva One;
@@ -294,9 +258,6 @@ header .nav_menu_part{
     font-weight: 400;
     color: #c89f2d;
     text-transform: capitalize;
-}
-.food_item_p{
-    width: 100px;
 }
 .food_item_p h4{
     font-family: Yeseva One;
@@ -316,6 +277,7 @@ header .nav_menu_part{
     font-weight: 400;
     color: #4c4c4c
 }
+
 /* special_item_start */
 .special_item{
     border: 1px solid #c89f2d;
@@ -344,7 +306,6 @@ header .nav_menu_part{
 /* common_food_item_end  */
 /* item_list_part_end */
 
-
 /* guest_review_part_start */
 .guest_review_part{
     background:url(../images/guest_review-banner.jpg);
@@ -357,7 +318,6 @@ header .nav_menu_part{
 }
 .guest_review_part .guest_review_content{
     background: rgba(0, 0, 0, 0.6);
-    width: 770px;
     padding: 83px 74px ;
 }
 .guest_review_content p{
@@ -399,19 +359,18 @@ header .nav_menu_part{
     background-size: cover;
     background-attachment: scroll;
     padding: 100px 0;
-
-}
-.resturent_booking_part .resturent_booking_section{
-    width: 570px;
 }
 .resturent_booking_section .resturent_booking_img{
-    width: 270px;
     height: 508px;
+}
+.resturent_booking_section .resturent_booking_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .resturent_booking_data{
     padding: 0 70px;
 }
-
 /* resturent_common_p_start */
 .minus_margin{
     margin-bottom: 0px;
@@ -476,7 +435,7 @@ header .nav_menu_part{
     margin-top: 23px;
 }
 /* extra_margin */
-/* resturent_booking_part_send */
+/* resturent_booking_part_end */
 
 /* footer_start */
 footer{
@@ -487,7 +446,7 @@ footer{
     padding-bottom: 23px;
 }
 .footer_section{
-    width: 370px;
+    
 }
 
 /* footer_common_heading_start  */
