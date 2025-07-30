@@ -6,59 +6,62 @@
     <!-- google fonts cdn link -->
     
     <!-- css link -->
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/street.favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Redesign</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <title>Resturent Website</title>
 </head>
 <body>
-    <section class="header_container">
     <!-- header_part_start -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand company_logo" href="index.html">
-                        <img src="images/Restrurent_main_logo.png" alt="main_logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="nav_menu_part">
-                        <div class="collapse navbar-collapse nav_menu_list" id="navbarNav">
-                            <ul class="navbar-nav nav_list_ul">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Igredients</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Menu</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Reservations</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav_menu_icon">
-                            <ul class="nav_icon_ul">
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            </ul>
-                        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand company_logo" href="index.html">
+                    <img src="images/Restrurent_main_logo.png" alt="main_logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav_menu_part">
+                    <div class="collapse navbar-collapse nav_menu_list" id="navbarNav">
+                        <ul class="navbar-nav nav_list_ul">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Igredients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reservations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_menu_icon">
+                        <ul class="nav_icon_ul">
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-    <!-- header_part_end -->
+            </div>
+        </nav>
+    </header>
+<!-- header_part_end -->
+    <section class="header_container">
+
 
     <!-- heading_part_start -->
         <div class="web_heading">
@@ -70,11 +73,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img class="heading_img col-12 col-lg-2 offset-lg-5 col-sm-6 offset-lg-3" src="images/common_design_img.png" alt="logo">
+                        <img class="heading_img col-12 col-lg-2 col-sm-6 offset-lg-5 offset-lg-3" src="images/common_design_img.png" alt="logo">
                     </div>
                     <div class="heading_button row">
                         <div class="col-12 col-lg-8 offset-lg-2">
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center button-grp">
                                 <button>BOOK A TABLE</button>
                                 <button>SEE THE MENU</button>
                             </div>
@@ -491,7 +494,7 @@
                 </div>
                 <div class="resturent_booking_section resturent_booking_data col-12 col-lg-6 col-md-6 col-sm-12">
                     <div class="row">
-                        <div class="col-8 offset-2">
+                        <div class="col-lg-8 col-md-8 col-sm-10 offset-lg-2 offset-md-2 offset-sm-1">
                         <!-- common_h2_start -->
                         <h2 class="common_heading">
                             Just the right food
@@ -560,7 +563,7 @@
                 
                                                 <!-- common_input_start -->
                                                 <div>
-                                                    <input id="mydate" type="date" class="common_input" placeholder="date*">
+                                                    <input id="mydate" type="date" class="common_input date" placeholder="date*">
                                                 </div>
                                                 <!-- common_input_start -->
                                             </div>
@@ -605,7 +608,7 @@
     <footer>
         <div class="container jc_space_between footer_wrapper">
             <div class="row">
-                <div class="footer_section col-12 col-lg-4 col-md-4">
+                <div class="footer_section footer-1 col-12 col-lg-4 col-md-4">
                     <!-- footer_common_heading_start -->
                      <h5 class="footer_common_heading">
                         About Us
@@ -615,7 +618,7 @@
                         Lambda's new and expanded Chelsea location represents a truly authentic <span>Greek</span> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.Lamda the best restaurant in town
                      </p>
                 </div>
-                <div class="footer_section col-12 col-lg-4 col-md-4">
+                <div class="footer_section footer-2 col-12 col-lg-4 col-md-4">
                     <!-- footer_common_heading_start -->
                     <h5 class="footer_common_heading">
                         Opening Hours
@@ -629,7 +632,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer_section col-12 col-lg-4 col-md-4">
+                <div class="footer_section footer-3 col-12 col-lg-4 col-md-4">
                     <!-- footer_common_heading_start -->
                     <h5 class="footer_common_heading">
                         Our Location

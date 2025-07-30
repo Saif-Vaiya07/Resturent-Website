@@ -54,24 +54,32 @@ img{
     background-size: cover;
     background-position: 100% 100%;
     background-attachment: scroll;
+    margin-top: -140px;
 }
 /* header_part_start */
-header{
+header {
     width: 100%;
+    position: sticky;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.173);
+    backdrop-filter: blur(0.5px);
 }
 header .company_logo{
-    width: 200px;
+    max-width: 200px;
     float: left;
     margin: 11px 0px;
 }
+header .company_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 header .nav_menu_part{
-    width: 970px;
     float: right;
-    margin-top: 54px;
-    margin-bottom: 38px;
+    /* margin-top: 54px;
+    margin-bottom: 38px; */
 }
 .nav_menu_list{
-    width: 860px;
     float: left;
 }
 .nav_menu_list .nav_list_ul{
@@ -114,10 +122,10 @@ header .nav_menu_part{
 /* header_part_end */
 
 /* heading_part_start */
-.web_heading .heading_content{
-    padding: 130px 0 142px;
+.web_heading .heading_content {
+    padding: 280px 0 170px;
 }
-.heading_content h1{
+.heading_content h1.web_main_heading{
     font-family: Yeseva One;
     text-align: center;
     font-size: 90px;
@@ -175,6 +183,11 @@ header .nav_menu_part{
     width: 230px;
     margin: 15px auto 33px;
 }
+.common_heading_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* common_heading_img_end */
 
 /* common_p_start */
@@ -227,6 +240,11 @@ header .nav_menu_part{
     width: 105px;
     height: 105px;
     border-radius: 50%;
+}
+.ingredients_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /* dish_ingredients_part_end */
 
@@ -369,7 +387,7 @@ header .nav_menu_part{
     object-fit: cover;
 }
 .resturent_booking_data{
-    padding: 0 70px;
+    padding: 0 40px;
 }
 /* resturent_common_p_start */
 .minus_margin{
@@ -395,9 +413,16 @@ header .nav_menu_part{
     width: 198px;
     height: 34px;
     border: 1px solid #e1e2e2;
+    color: #7C7C7C;
+    font-style: italic;
     outline: none;
     background-color: transparent;
 }
+input.common_input.date {
+    padding-left: 10px;
+    font-weight: 400;
+}
+
 .common_input:hover{
     border-color: #e0d1a3;
 }
@@ -445,9 +470,9 @@ footer{
 .footer_wrapper{
     padding-bottom: 23px;
 }
-.footer_section{
+/* .footer_section{
     
-}
+} */
 
 /* footer_common_heading_start  */
 .footer_common_heading{
