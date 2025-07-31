@@ -62,7 +62,7 @@ header .company_logo {
     /* width: 112px; */
     height: 100px;
     float: left;
-    padding: 0px;
+    padding: 10px 0;
 }
 header .company_logo img{
     width: 100%;
