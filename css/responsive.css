@@ -1,10 +1,13 @@
 /* Extra Small */
 @media (min-width: 320px) and (max-width:575px) {
+    header{
+        height: 80px;
+    }
     /* header starts here */
-
     header .company_logo {
-        max-width: 55px;
-        margin: 0;
+        /* width: 112px; */
+        height: 80px;
+        padding: 20px 0px;
     }
     .navbar{
         position: relative;
@@ -12,7 +15,8 @@
     button.navbar-toggler {
         position: absolute;
         padding: 4px 11px;
-        top: 22px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 20px;
         border-color: #ffffff;
     }
@@ -24,12 +28,11 @@
     header .nav_menu_part {
         float: right;
         position: absolute;
-        top: 58px;
+        top: 80px;
         left: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.373);
         backdrop-filter: blur(0.5px);
-        padding: 10px;
     }
     .nav_menu_list {
         float: left;
@@ -271,15 +274,18 @@
 @media (min-width: 576px) and (max-width:767px){ 
     /* header part starts here */
     header{
+        height: 80px;
         position: sticky;
         top: 0;
     }
     header .company_logo {
-        max-width: 90px;
+        height: 80px;
+        float: left;
+        padding: 10px;
     }
     .nav_menu_list {
         position: absolute;
-        top: 101px;
+        top: 80px;
         left: 0px;
         width: 100%;
         float: left;
@@ -298,10 +304,18 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .nav_menu_part .nav_menu_icon .nav_icon_ul {
+        position: absolute;
+        float: right;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+    }
     button.navbar-toggler {
         position: absolute;
         padding: 3px 7px;
-        top: 40px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 20px;
         border-color: #ffffff;
     }
@@ -433,11 +447,14 @@
         top: 0;
     }
     header .company_logo {
-        max-width: 90px;
+        /* width: 112px; */
+        height: 100px;
+        float: left;
+        padding: 26px 0px;
     }
     .nav_menu_list {
         position: absolute;
-        top: 101px;
+        top: 100px;
         left: 0px;
         width: 100%;
         float: left;
