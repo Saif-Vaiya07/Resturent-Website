@@ -1,15 +1,13 @@
 /* Extra Small */
 @media (min-width: 320px) and (max-width:575px) {
     /* header starts here */
-    /* header {
-        background-color: #DAB33E;
-    } */
-    .navbar{
-        position: relative;
-    }
+
     header .company_logo {
         max-width: 70px;
         margin: 0;
+    }
+    .navbar{
+        position: relative;
     }
     button.navbar-toggler {
         position: absolute;
@@ -25,16 +23,18 @@
     }
     header .nav_menu_part {
         float: right;
-    }
-    header .nav_menu_part {
-        float: right;
         position: absolute;
         top: 67px;
         left: -20px;
         width: 107vw;
-        background: rgba(255, 255, 255, 0.173);
+        background: rgba(0, 0, 0, 0.373);
         backdrop-filter: blur(0.5px);
         padding: 10px;
+    }
+    .nav_menu_list {
+        float: left;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
     .nav_list_ul li a {
         font-size: 15px;
@@ -82,7 +82,7 @@
         margin: 0 auto;
     }
     .common_heading_img {
-        width: 80%;
+        width: 55%;
         margin: 10px auto 20px;
     }
     /* disp part ends here */
@@ -261,18 +261,336 @@
     }
     /* footer part ends here */
 }
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:767){  }
+@media (min-width: 576px) and (max-width:767px){ 
+    /* header part starts here */
+    header{
+        position: sticky;
+        top: 0;
+    }
+    header .company_logo {
+        max-width: 90px;
+    }
+    .nav_menu_list {
+        position: absolute;
+        top: 101px;
+        left: 0px;
+        width: 100%;
+        float: left;
+        background: rgba(0, 0, 0, 0.373);
+        backdrop-filter: blur(0.5px);
+        padding: 10px;
+    }
+    .nav_menu_list .nav_list_ul {
+        float: left;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .nav_menu_part .nav_menu_icon {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    button.navbar-toggler {
+        position: absolute;
+        padding: 3px 7px;
+        top: 40px;
+        right: 20px;
+        border-color: #ffffff;
+    }
+    button.navbar-toggler .fa-bars {
+        width: 1em;
+        height: 1em;
+        color: #ffffff;
+    }
+    /* header part ends here */
+    
+    /* heading part starts here */
+    .heading_content h1.web_main_heading {
+        font-size: 35px;
+    }
+    .heading_button button {
+        font-size: 15px;
+    }
+    /* heading part ends here */
+
+    .common_heading {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    
+    /* ingredients part starts here */
+    .ingredients_img_grp {
+        width: 100%;
+    }
+    .ingredients_img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+    }
+    /* ingredients part ends here */
+
+
+    /* review part starts here */
+    .guest_review_content p {
+        font-size: 15px;
+    }
+    /* review part ends here */
+
+    /* booking part starts here */
+    .resturent_bookin_p1 {
+        margin: 30px 0 15px;
+    }
+    /* booking part ends here */
+
+    /* footerr part starts here */
+
+    .footer_wrapper {
+        padding-bottom: 0;
+    }
+    footer {
+        padding-bottom: 0;
+    }
+    .footer-1 .footer_common_heading,
+    .footer-2 .footer_common_heading,
+    .footer-3 .footer_common_heading{
+        margin-bottom: 20px;
+    }
+    .footer-1,.footer-2,.footer-3{
+        margin-bottom: 30px;
+    }
+    .footer_section.footer-2 p,
+    .footer_section.footer-3 p{
+        margin-bottom: 0;
+    }
+    .footer_section.footer-2 .footer_icon {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer_section.footer-3 .footer_icon {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .footer_section.footer-2 .footer_icon img{
+        width: 100%;
+    }
+    .footer_section.footer-3 .social_icon ul {
+        margin-left: -17px;
+    }
+    .footer_section.footer-3 .social_icon ul li i {
+        font-size: 12px;
+        color: #ffffff;
+        padding: 0 5px;
+    }
+    .footer_section.footer-3 .col-4.offset-4 {
+        position: relative;
+    }
+    .footer_section.footer-3 .social_icon ul {
+        margin-left: 50%;
+        transform: translateX(-75%);
+    }
+    /* footerr part ends here */
+    
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width:991){  }
+@media (min-width: 768px) and (max-width:991px){ 
+    /* header part start here */
+    header{
+        position: sticky;
+        top: 0;
+    }
+    header .company_logo {
+        max-width: 90px;
+    }
+    .nav_menu_list {
+        position: absolute;
+        top: 101px;
+        left: 0px;
+        width: 100%;
+        float: left;
+        background: rgba(0, 0, 0, 0.373);
+        backdrop-filter: blur(0.5px);
+        padding: 10px;
+    }
+    .nav_menu_list .nav_list_ul {
+        float: left;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .nav_menu_part .nav_menu_icon {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    button.navbar-toggler {
+        position: absolute;
+        padding: 3px 7px;
+        top: 40px;
+        right: 20px;
+        border-color: #ffffff;
+    }
+    button.navbar-toggler .fa-bars {
+        width: 1em;
+        height: 1em;
+        color: #ffffff;
+    }
+    /* header part end here */
+
+    /* heading part start here */
+    .heading_content h1.web_main_heading {
+        font-size: 45px;
+    }
+    /* heading part end here */
+
+    /* fish dish part start here */
+    .first_dish_part {
+        background-position: 19%;
+    }
+    .first_dish_containt {
+        padding: 100px 50px;
+    }
+    .first_dish_chef_logo {
+        margin-left: 250px;
+    }
+    /* fish dish part end here */
+
+    /* ingrdients part start here */
+    .ingredients_img_grp {
+        width: 100%;
+    }
+    .ingredients_img {
+        width: 90px;
+        height: 90px;
+    }
+    /* ingrdients part end here */
+
+    /* item list part start here */
+    .item_list_section_grp {
+        margin: 0 25px 47px 25px;
+    }
+    .common_heading {
+        font-size: 30px;
+    }
+    .food_item_name h3,
+    .food_item_p h4 {
+        font-size: 15px;
+    }
+    .food_item_section {
+        padding-bottom: 7px;
+    }
+    .food_item_about p {
+        font-size: 10px;
+    }
+    /* item list part end here */
+
+    /* review part starts here */
+    .guest_review_content p {
+        font-size: 15px;
+    }
+    .guest_review_part .guest_review_content {
+        padding: 76px 55px;
+    }
+    /* review part ends here */
+
+    /* booking part start here */
+    .resturent_booking_section .resturent_booking_img {
+        height: 300px;
+    }
+    .resturent_booking_data {
+        padding: 0px 0px;
+    }
+    .common_heading {
+        font-size: 25px;
+    }
+    .resturent_bookin_p1 {
+        margin: 15px 0;
+    }
+    .common_p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+    .common_label {
+        font-size: 12px;
+    }
+    .common_input {
+        width: 153px;
+        height: 25px;
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    .common_input::placeholder {
+        font-size: 10px;
+    }
+    input.common_input.date {
+        padding-left: 23px;
+    }
+    .resturent_booking_form_button button {
+        width: 150px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+    /* booking part end here */
+
+    /* footer part starts here */
+    footer {
+        padding: 30px 0;
+    }
+    .footer_wrapper {
+        padding-bottom: 0;
+    }
+    .footer_common_heading {
+        margin-bottom: 30px;
+    }
+    .footer_section p {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+    .footer_section.footer-2 .footer_icon {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer_section.footer-2 .footer_icon {
+        margin-top: 0;
+        margin-left: -60px;
+    }
+    .footer_section.footer-3 .footer_icon {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer_section.footer-3 .social_icon ul {
+        margin-left: -35px;
+    }
+    .social_icon ul li i {
+        font-size: 14px;
+        color: #ffffff;
+        padding: 0 5px;
+    }
+   
+    /* footer part ends here */
+
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1199){  }
+@media (min-width: 992px) and (max-width:1199px){  
+    .first_dish_part {
+        background-position: 50% 100%;
+    }
+    .ingredients_img {
+        width: 90px;
+        height: 90px;
+    }
+    .resturent_booking_data {
+        padding: 0;
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width:1399){  }
+/* @media (min-width: 1200px) and (max-width:1399px){  } */
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+/* @media (min-width: 1400px) {  } */
